@@ -1,32 +1,25 @@
-# DIO - Trilha .NET - Fundamentos
-www.dio.me
+# Projeto de Estacionamento em C# - DIO Trilha .NET - Fundamentos
 
-## Contexto
-Este projeto tem como objetivo a construção de uma classe chamada "Estacionamento", que gerencia o estacionamento de veículos. A classe possui variáveis para armazenar informações como preço inicial, preço por hora e uma lista de veículos estacionados.
+Este projeto faz parte do módulo de fundamentos da trilha .NET oferecida pela DIO (Digital Innovation One). O objetivo é construir um sistema de estacionamento para gerenciar veículos estacionados e realizar operações como adição, remoção e listagem de veículos.
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+## Estrutura do Projeto
+O projeto consiste em uma classe chamada "Estacionamento", conforme o diagrama de classe fornecido.
 
-A classe contém três variáveis, sendo:
+### Classe `Estacionamento`
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
+A classe contém três variáveis:
 
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
+- `precoInicial`: Tipo decimal. Representa o preço cobrado para deixar um veículo estacionado.
+- `precoPorHora`: Tipo decimal. Representa o preço por hora que o veículo permanece estacionado.
+- `veiculos`: Lista de strings. Representa os veículos estacionados, contendo apenas as placas dos veículos.
 
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
+A classe possui três métodos:
 
-A classe contém três métodos, sendo:
+- `AdicionarVeiculo`: Método para receber uma placa digitada pelo usuário e armazená-la na lista `veiculos`.
+- `RemoverVeiculo`: Método para verificar se um veículo está estacionado, solicitar a quantidade de horas que ele permaneceu e calcular o valor cobrado, exibindo-o para o usuário.
+- `ListarVeiculos`: Método para listar todos os veículos presentes no estacionamento. Se não houver veículos, exibe a mensagem "Não há veículos estacionados".
 
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
+## Implementação do Código
+O código do projeto está pela metade, e a implementação deve ser concluída seguindo as regras descritas acima. Procure pela palavra comentada "TODO" no código, e em seguida, implemente conforme as regras estabelecidas.
 
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
-
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
-
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
-
+O código-fonte e instruções detalhadas podem ser encontrados [aqui](https://github.com/digitalinnovationone/trilha-net-fundamentos-desafio). Este projeto contribui para o aprendizado dos fundamentos na trilha .NET da DIO.
